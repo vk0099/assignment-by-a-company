@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>employee</title></head>
+<body>
+<h1>Add new Employee</h1>
+<form action="SaveServlet" Method="post">
+<table>
+<tr><td>ID</td><td>:<input type="number" name="id"></td></tr>
+<tr><td>First Name</td><td>:<input type="text"name="fname"></td></tr>
+<tr><td>Last Name</td><td>:<input type="text" name="lname"></td></tr>
+<tr><td>Employee ID</td><td>:<input type="number" name="eid"></td></tr>
+<tr><td>Start Date</td><td>:<input type="date" name="sdate" value="yyyy-mm-dd"></td></tr>
+<tr><td>Designation</td><td>:<input type="text" name="designation"></td></tr>
+<tr><td>Department</td><td>:<input type="text" name="dep"></td></tr>
+<tr><td>End Date</td><td>:<input type="text" name="edate" value="yyyy-mm-dd"></td></tr>
+<tr><td>Status</td><td>:
+<select name="stat1" style="width:150px">
+<option>Full-time</option>
+<option>Part-time</option>
+<option>contract</option></select></td></tr>
+<tr><td>Date of Birth</td><td>:<input type="text" name="dob" value="yyyy-mm-dd"></td></tr>
+<tr><td>Reporting Manager</td><td>:<input type="text" name="rm"></td></tr>
+<tr><td>Gender</td><td>:
+<select name="gender" style="width:150px">
+<option>male</option>
+<option>female</option></select></td></tr>
+<tr><td>Blood Group</td><td>:<input type="text"name="bg"></td></tr>
+<tr><td>Address</td><td><textarea name="address" rows="4" cols="40"></textarea></td></tr>
+<tr><td><input type="submit" value="Save Employee"/></td>
+<td><input type="reset"/>
+</td></tr>
+</table>
+</form><button onclick="document.location='home.html'">Home</button>
+</body>
+</html>
